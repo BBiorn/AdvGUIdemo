@@ -1,4 +1,9 @@
-
+/*
+ * This program will simulate a grocery store shopping application.
+ * Users will search for food items to add to their cart.
+ *    They will then be able to remove items from the cart and checkout.
+ *    
+ */
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Vector;
@@ -20,6 +25,9 @@ public class AdvGUIdemo
 	   
 	   JList foodListJL = new JList(foodList);//This is going to show the food items in the cart
 	   JScrollPane foodScrollPane = new JScrollPane(foodListJL);
+	   mainPanel.add(foodScrollPane, BorderLayout.EAST);
+	   
+	   JButton checkoutBtn = new JButton("Checkout");
 	   mainPanel.add(foodScrollPane, BorderLayout.EAST);
 	   
 	   
